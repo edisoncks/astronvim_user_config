@@ -74,4 +74,20 @@ return {
   --     }, { mode = "n", prefix = "<leader>" })
   --   end,
   -- },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = function (_, opts)
+      opts.filesystem.filtered_items = {
+        visible = true,
+        never_show = {
+          ".DS_Store",
+          "thumbs.db",
+        },
+        never_show_by_pattern = {
+          ".null-ls_*",
+        },
+      }
+      return opts
+    end,
+  },
 }
