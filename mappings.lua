@@ -32,6 +32,11 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- Neoscroll
+    -- https://blog.theodorc.no/posts/top5-nvim-plugins/#1-neoscroll
+    ["<C-u>"] = { "<C-u>zz", desc = "Scroll Up" },
+    ["<C-d>"] = { "<C-d>zz", desc = "Scroll Down" },
   },
   t = {
     -- setting a mapping to false will disable it
